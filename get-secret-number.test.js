@@ -13,8 +13,8 @@ it('contains only numbers', () => {
 });
 
 it('generates a number where all 4 digits are unique', () => {
-    const num = getSecretNumber();
+    const num = getSecretNumber().split('');
     const uniqueValuesSet = new Set(num);
 
     expect(Array.from(uniqueValuesSet).length).toBe(4)
-})
+});
