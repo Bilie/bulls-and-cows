@@ -5,8 +5,7 @@ jest.mock('prompt-sync');
 jest.mock('./get-secret-number');
 jest.mock('./get-prompt');
 
-const prompt = require('prompt-sync')
-const getSecretNumber = require('../get-secret-number');
+const getSecretNumber = require('./get-secret-number');
 const getPrompt = require('./get-prompt');
 
 describe('game play', () => {
