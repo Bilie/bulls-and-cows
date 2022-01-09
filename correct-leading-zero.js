@@ -2,7 +2,7 @@ const correctLeadingZero = (arr) => {
     const isFirstDigitZero = arr[0] === 0;
 
     if (isFirstDigitZero) {
-        return arr.reverse();
+        arr.push(arr.shift());
     }
 
     return arr;
