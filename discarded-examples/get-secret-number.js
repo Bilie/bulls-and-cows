@@ -1,5 +1,5 @@
 const { performance } = require('perf_hooks');
-const areDigitsUnique = require('../are-digits-unique');
+const areDigitsUnique = require('./are-digits-unique');
 const getRandomNum = (min, max) => Math.random() * (max - min) + min;
 
 const getSecretNumber = () => {
