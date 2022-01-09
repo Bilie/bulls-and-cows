@@ -9,8 +9,9 @@ const getRandomNum = function getRandomIntInclusive(min, max) {
 }
 
 const getSecretNumber = () => {
+    // Uncomment to see function performance
     // Start tracking performance
-    const t0 = performance.now();
+    // const t0 = performance.now();
 
     const digitsCount = 4;
     const digits = [];
@@ -23,10 +24,11 @@ const getSecretNumber = () => {
         }
     }
 
+    // Uncomment to see function performance
     // End tracking performance (even though we are missing on calculating the leading zero correction)
-    const t1 = performance.now();
+    // const t1 = performance.now();
     // Log performance to the console
-    console.log(`Call to getSecretNumber took ${(t1 - t0) / 1000} milliseconds.`);
+    // console.log(`Call to getSecretNumber took ${(t1 - t0) / 1000} milliseconds.`);
 
     return correctLeadingZero(digits).join('');
 };
